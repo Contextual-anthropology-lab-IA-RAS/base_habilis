@@ -1,19 +1,33 @@
+# logs
 /logs/
 *.log
+
+# virtual environment
 /venv/
-/.env*
+.venv
+
+# cache
 __pycache__/
 /flask_session
+/cache
+.pytest_cache
+
+# creds
+/.env*
+
+# ide
 /.vscode
+/.idea/
+
+# files
 *.xlsx
 !src/base_habilis/cli/db_old/*.xlsx
 *.pdf
 *.jpg
 *.jpeg
 **/.DS_Store
-/postgres-data
 TODO
-/.idea/
-/cache
-.pytest_cache
+
+# data
+/postgres-data
 *.dump
